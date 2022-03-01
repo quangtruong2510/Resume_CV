@@ -276,7 +276,7 @@ body{
    
     @media only screen and (max-width: 1980px){
         .resume {
-            margin: 5% 20%;
+            margin: 5% 25%;
         }
         @media only screen and (max-width: 1080px){
             .resume {
