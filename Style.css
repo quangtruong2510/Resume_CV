@@ -7,12 +7,12 @@
     list-style: none;
     font-family: "Poppins" ,sans-serif;
 }
+
 body{
     display: flex;
-   /* margin: 20px 20% 20px 20%; */
-    background-color: rgb(157, 173, 218);
-    
+    background-color: rgb(157, 173, 218);  
 }
+
 .resume_avatar{
     padding: 10% 10%;
     width: 100%;
@@ -90,7 +90,7 @@ body{
 
 .resume .resume_left{
     min-height: 560px;
-    max-width: 100%;
+    max-width: 500px;
     background:#e2e1e1 ;
     padding: 20px;
 }
@@ -102,7 +102,6 @@ body{
     padding-bottom: 5px;
     font-family: 'Roboto',sans-serif;
     margin-bottom: 30px;
-
 }
 
 .name_skill_left{
@@ -127,6 +126,7 @@ body{
     align-items: center;
     margin-bottom: 10px;
 }
+
 .resume .resume_left ul li .icon{
     width: 35px;
     height: 35px;
@@ -138,6 +138,7 @@ body{
     position: relative;
     margin-right: 10px;
  }
+
  .resume .icon i{
    position: absolute;
    top: 50%;
@@ -145,15 +146,14 @@ body{
    transform: translate(-50%, -50%);
 }
 
-
  /* ---------------------------------------------RIGHT_RESUME----------------------------------------  */
 
  .resume .resume_right{
     background:#ffffff ;
     width: 100%;
-    padding: 40px;
-    
+    padding: 20px 120px 20px 40px;
 }
+
 .resume .resume_right .resume_information{
     text-align: center;
 }
@@ -183,16 +183,12 @@ body{
     padding-right: 30px;
     left: 50%;
     transform: translateX(-50%);
-
-
 }
 .position_apply{
     margin-top: 30px;
     color: #bbbcbd ;
     font-size: 30px;
-
 }
-
 
 /* ------------------------------- Bar Skill ----------------------  */
 .skills{
@@ -217,71 +213,70 @@ body{
     margin-top: 10px;
     border-radius: 10px;
     position: relative;
-    }
-    .bar span::before{
-        position: absolute;
-        content: "";
-        width: 80%;
-        height: 80%;
-        background-color: #d89269;
-        top: 50%;
-        left: 2px;
-        transform: translateY(-50%);
-        border-radius: 10px;
-    }
+}
 
-    .skills-content{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        border: #191919;
-    }
+.bar span::before{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: #d89269;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.skills-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: #191919;
+}
     
-    
-    .skills-content .skill-1 .p{
-        display: inline-block;
-        color: #De191910;
-        text-align: left;
-        margin-left: 70px;
-        margin-top: 11px;
-        font-size: 15px;
-        margin-top: 10px;
+.skills-content .skill-1 .p{
+    display: inline-block;
+    color: #De191910;
+    text-align: left;
+    margin-left: 70px;
+    margin-top: 11px;
+    font-size: 15px;
+    margin-top: 10px;
 
-    }
-    .skills-content .skill-1 .space {
-        margin-top: 4px;
-    }
+}
+.skills-content .skill-1 .space {
+    margin-top: 4px;
+}
 
-    .dot{
-        margin-left: 20px;
-        height: 18px;
-        width: 18px;
-        border-radius: 50%;
-        background-color: #d89269;
-        display: inline-block;
-    }
-    .dot-2{
-        margin-left: 20px;
-        height: 17px;
-        width:17px;
-        background-color: #faf9f9;
-        border-radius: 50%;
-        display: inline-block;
-        border: 0.5px solid #8f8e8e;
-    }
+.dot{
+    margin-left: 20px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #d89269;
+    display: inline-block;
+}
+
+.dot-2{
+    margin-left: 20px;
+    height: 17px;
+    width:17px;
+    background-color: #faf9f9;
+    border-radius: 50%;
+    display: inline-block;
+    border: 0.5px solid #8f8e8e;
+}    
 
     .circle{
         margin-top: 10px;
         display: flex;
     }
 
-
+    /* Responsive  */
     @media only screen and (max-width: 1680px){
         .resume {
             margin: 100px ;
        }
     }
-
-    
         @media only screen and (max-width: 1080px){
             .resume {
                  margin: 50px ;
@@ -291,8 +286,6 @@ body{
                     margin: 2% 2%;
                 }
             }
-
-            
         }
     
 
