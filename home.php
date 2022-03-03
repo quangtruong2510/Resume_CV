@@ -154,21 +154,14 @@ $persons = getall();
                 <br>
 <!-- Fecth Data  -->
                     <?php foreach ($persons as $person) : ?>
-                        <tr>
-                            <td><?php echo htmlspecialchars($person['id']) ?></td>
-                            <td><?php echo htmlspecialchars($person['name_company']); ?></td>
-                            <td><?php echo htmlspecialchars($person['since']); ?></td>
-                        </tr>
+                        <tr class="row-<?php htmlspecialchars($person['id']) ?>">
+                            <div class="name_title "> <?php echo htmlspecialchars($person['name_company']) ?></div>
+                            <p class="content1_nonItalic "> <?php echo htmlspecialchars($person['since']); ?></p>
+                            <!-- <p class="content4"> <?php echo htmlspecialchars($person['position']); ?></p> -->
+                        </tr> 
+                        <br />
                     <?php endforeach; ?>
 
-                <!-- <div class="name_title ">Intern developer </div>
-                <p class="content1_nonItalic">
-                    DAC Data Technology VietNam | 2/2022 - 3/2022
-                </p>
-                <p class="content4">
-                    Trainning with PHP.
-                </p> -->
-            </div>
             <br>
 
             <div class=" resume_project">

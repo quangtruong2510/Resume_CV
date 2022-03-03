@@ -1,9 +1,6 @@
 
 <?php 
-//  include 'config.php';
-  if(isset($_POST['submit'])){
-    alert('Xin chào các bạn');
- }
+include_once ('service.php');
 ?>
 
 <!DOCTYPE html>
@@ -82,24 +79,34 @@ body{
       <!--Email Input-->
       <div class="form-group">
         <h5>Name Company</h5>
-        <input type="text" class="form-input" placeholder="DAC Data Technology VietNam">
+        <input type="text" name="name_company" id="name_company" class="form-input" placeholder="DAC Data Technology VietNam">
       </div>
       <!--Password Input-->
       <div class="form-group">
         <h5>Time</h5>
-        <input type="text" class="form-input" placeholder="2018-2022">
+        <input type="text" name="since" id="since" class="form-input" placeholder="2018-2022">
       </div>
       <div class="form-group">
         <h5>Position</h5>
-        <input type="text" class="form-input" placeholder="Intern">
+        <input type="text"  name="position" id="position" class="form-input" placeholder="Intern">
       </div>
       <!--Login Button-->
-      <div class="form-group">
-        <button class="form-button" type="submit">Add</button>
-      </div>
+      <!-- <div class="form-group">
+      <input type="submit" name="insert" value="insert" onclick="insert()" />
+      </div> -->
+      <script>
+		function myFunction()
+		{ $name_company = $_GET['name_company'];
+      $since = $_GET['since'];
+      $position = $_GET['position'];
+			Insert("123", "since");
+		}
+	  </script>
+    <button onclick="myFunction()">Click</button>
     </form>
   </div>
   <!--/.wrap-->
 </body>
 
 </html>
+
