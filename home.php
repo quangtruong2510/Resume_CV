@@ -117,7 +117,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </div>
@@ -127,20 +126,33 @@
                 <div class="name_person bold"> Nguyen Quang Truong</div>
                 <div class="position_apply medium"> Intern PHP</div>
             </div>
-
-
-
-            <div class=" resume_education">
-                <div class="title">
-                    <p class="name_skill_right bold"> EDUCATION </p>
-                </div>
+            
+            <!-- -------------------------------------------------------------  -->
+            <div class=" resume_education">            
                 <div class="name_title "> Bachelor university </div>
                 <p class="content3"> Da Nang University Of Techonolgy </p>
                 <span class='bx bxs-calendar ' style="color: rgb(196, 194, 191); margin-top: 10px;"></span>
                 <span class="content1"> 2018 - 2022 </span>
                 <p class="content4"> Major: Software Engineering </p>
+            
             </div>
 
+            <div class="resume_item resume_experiences">
+                <div class="title">
+                    <p class="name_skill_right  bold"> EXPERIENCES </p>
+                </div>
+
+<!-- button add  -->
+                <a href="create.php/"><button> ADD NEW </button></a> 
+<!-- Fecth Data  -->
+                <div class="name_title ">Intern developer </div>
+                <p class="content1_nonItalic">
+                    DAC Data Technology VietNam | 2/2022 - 3/2022
+                </p>
+                <p class="content4">
+                    Trainning with PHP.
+                </p>
+            </div>
 
             <div class=" resume_project">
                 <div class="title">
@@ -165,6 +177,7 @@
                     of functions add and update, but also have the ability of deleting and managing the
                     information of students.</p>
             </div>
+
 
             <div class=" resume_skills">
                 <div class="title">
@@ -217,23 +230,13 @@
                 </div>
             </div>
 
-            <div class="resume_item resume_experiences">
-                <div class="title">
-                    <p class="name_skill_right  bold"> EXPERIENCES </p>
-                </div>
-                <div class="name_title ">Intern developer </div>
-                <p class="content1_nonItalic">
-                    DAC Data Technology VietNam | 2/2022 - 3/2022
-                </p>
-                <p class="content4">
-                    Trainning with PHP.
-                </p>
 
-            </div>
 
         </div>
 
     </div>
 </body>
+
+
 
 </html>
