@@ -1,8 +1,8 @@
 <?php
-require_once('service.php');
-require_once ('config.php');
+include_once ('service.php');
     
-$persons = getAll();
+$persons = getall();
+
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +22,6 @@ $persons = getAll();
                         <th>ID</th>
                         <th>Name</th>
                         <th>Last Name</th>
-                        <th>Age</th>
                     </tr>
                 </thead>
                 <tbody>

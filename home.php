@@ -1,3 +1,10 @@
+<?php
+include_once ('service.php');
+    
+$persons = getall();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -144,15 +151,25 @@
 
 <!-- button add  -->
                 <a href="create.php/"><button> ADD NEW </button></a> 
+                <br>
 <!-- Fecth Data  -->
-                <div class="name_title ">Intern developer </div>
+                    <?php foreach ($persons as $person) : ?>
+                        <tr>
+                            <td><?php echo htmlspecialchars($person['id']) ?></td>
+                            <td><?php echo htmlspecialchars($person['name_company']); ?></td>
+                            <td><?php echo htmlspecialchars($person['since']); ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+
+                <!-- <div class="name_title ">Intern developer </div>
                 <p class="content1_nonItalic">
                     DAC Data Technology VietNam | 2/2022 - 3/2022
                 </p>
                 <p class="content4">
                     Trainning with PHP.
-                </p>
+                </p> -->
             </div>
+            <br>
 
             <div class=" resume_project">
                 <div class="title">
