@@ -1,6 +1,6 @@
 <?php
-include_once ('service.php');
-    
+include_once('service.php');
+
 $persons = getall();
 
 ?>
@@ -133,15 +133,15 @@ $persons = getall();
                 <div class="name_person bold"> Nguyen Quang Truong</div>
                 <div class="position_apply medium"> Intern PHP</div>
             </div>
-            
+
             <!-- -------------------------------------------------------------  -->
-            <div class=" resume_education">            
+            <div class=" resume_education">
                 <div class="name_title "> Bachelor university </div>
                 <p class="content3"> Da Nang University Of Techonolgy </p>
                 <span class='bx bxs-calendar ' style="color: rgb(196, 194, 191); margin-top: 10px;"></span>
                 <span class="content1"> 2018 - 2022 </span>
                 <p class="content4"> Major: Software Engineering </p>
-            
+
             </div>
 
             <div class="resume_item resume_experiences">
@@ -149,19 +149,40 @@ $persons = getall();
                     <p class="name_skill_right  bold"> EXPERIENCES </p>
                 </div>
 
-<!-- button add  -->
-                <a href="create.php/"><button> ADD NEW </button></a> 
+                <!-- button add  -->
+                <form method="get" action="create.php">
+                    <input class="btn btn-add" type="submit" name="id" value="New">
+                </form>
                 <br>
-<!-- Fecth Data  -->
+
+                <!-- Fecth Data  -->
+                <div class="block">
                     <?php foreach ($persons as $person) : ?>
-                        <tr class="row-<?php htmlspecialchars($person['id']) ?>">
+                    <div class="row_123">
+                        <div>
                             <div class="name_title "> <?php echo htmlspecialchars($person['name_company']) ?></div>
-                            <p class="content1_nonItalic "> <?php echo htmlspecialchars($person['since']); ?></p>
-                            <!-- <p class="content4"> <?php echo htmlspecialchars($person['position']); ?></p> -->
-                        </tr> 
-                        <br />
+                            <span class='bx bxs-calendar ' style="color: rgb(196, 194, 191); margin-top: 10px;"></span>
+                            <a class="content1"> <?php echo htmlspecialchars($person['since']); ?></a>
+                            <p class="content4"> <?php echo "Position: " . htmlspecialchars($person['position']); ?></p>
+                            <input type="hidden" name="id" value="<?php echo htmlspecialchars($person['position']); ?>">
+                        </div>
+
+                        <div>
+                            <form method="get" action="create.php">
+                                <input type="hidden" name="id" value="<?php echo htmlspecialchars($person['id']); ?>">
+                                <input class="btn btn-warning mb-2" type="submit" name="editButton" value="Edit">
+                            </form>
+                            <form action="handle.php" method="post">
+                                <input type="hidden" name="id" value="<?php echo htmlspecialchars($person['id']); ?>">
+                                <input class="btn btn-danger" type="submit" name="delete" value="Delete">
+                            </form>
+                        </div>
+                    </div>
+                    <hr style="color: rgb(196, 194, 191); margin-top: 10px; margin-bottom: 10px;">
                     <?php endforeach; ?>
 
+                </div>
+            </div>
             <br>
 
             <div class=" resume_project">

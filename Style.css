@@ -1,19 +1,19 @@
-
 /* defaul set up  */
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: "Poppins" ,sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     display: flex;
-    background-color: rgb(157, 173, 218);  
+    background-color: rgb(157, 173, 218);
 }
 
-.resume_avatar{
+.resume_avatar {
     padding: 10% 10%;
     width: 100%;
     max-width: 600px;
@@ -22,7 +22,7 @@ body{
     align-items: center;
 }
 
-.resume{
+.resume {
     margin: 5% 20%;
     position: relative;
     width: 100%;
@@ -31,91 +31,101 @@ body{
     grid-template-columns: 1fr 2fr;
 }
 
+
 /* --------------------------------------------------------------------------setting font-------------------------------------------------  */
 
-.bold{
+.bold {
     font-size: 25px;
     font-style: normal;
     font-weight: bolder;
 }
-.medium{
-    font-style:initial;
-    font-weight:100;
-}
-.name_title{
-    margin-top: 10px;
-    font-family: Arial; 
-    font-size: 17px; 
-    font-style: normal; 
-    font-variant: normal;
-    font-weight: 550; 
-    line-height: 18px;
-   
-}
-.content1{
-    margin-top: 10px;
-    color: rgb(168, 166, 164);
-    font-style: italic; 
 
+.medium {
+    font-style: initial;
+    font-weight: 100;
 }
-.content1_nonItalic{
+
+.name_title {
+    font-family: Arial;
+    font-size: 17px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 550;
+    line-height: 18px;
+}
+
+.content1 {
+    margin-top: 10px;
+    color: rgb(168, 166, 164);
+    font-style: italic;
+}
+
+.content1_nonItalic {
     margin-top: 10px;
     color: rgb(168, 166, 164);
 }
-.content2{
+
+.content2 {
     margin-top: 10px;
     color: rgb(65, 64, 63);
 }
 
-.content3{
+.content3 {
     margin-top: 10px;
-    font-family: Arial; 
-    font-size: 14px; 
-    font-style: italic; 
+    font-family: Arial;
+    font-size: 14px;
+    font-style: italic;
     font-variant: normal;
-    font-weight: 100; 
+    font-weight: 100;
     line-height: 18px;
 }
-.content4{
-    margin-top: 10px;
-    font-family: "roboto"; 
-    font-size: 14px; 
-    font-style: normal; 
-    font-variant: normal;
-    font-weight: 100; 
-    line-height: 18px;
-    
-}
- /* ---------------------------------------------LEFT_RESUME------------------------------------------------------------------------  */
 
-.resume .resume_left{
+.content4 {
+    margin-top: 10px;
+    font-family: "Arial";
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.row_123 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ---------------------------------------------LEFT_RESUME------------------------------------------------------------------------  */
+
+.resume .resume_left {
     min-height: 560px;
     max-width: 500px;
-    background:#e2e1e1 ;
+    background: #e2e1e1;
     padding: 20px;
 }
 
-.resume .title{
+.resume .title {
     position: relative;
     border-bottom: 2px solid #edc7b1;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 30px;
 }
 
-.name_skill_left{
+.name_skill_left {
     top: 20px;
     display: inline-block;
     position: relative;
-    background-color: #e2e1e1;    
+    background-color: #e2e1e1;
     padding-left: 15px;
     padding-right: 15px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.resume .resume_left .image_avata{
+.resume .resume_left .image_avata {
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -127,34 +137,35 @@ body{
     margin-bottom: 10px;
 }
 
-.resume .resume_left ul li .icon{
+.resume .resume_left ul li .icon {
     width: 35px;
     height: 35px;
     background: #fff;
-    color:  #d89269;
+    color: #d89269;
     border-radius: 50%;
     font-size: 16px;
     margin-right: 5px;
     position: relative;
     margin-right: 10px;
- }
-
- .resume .icon i{
-   position: absolute;
-   top: 50%;
-   Left: 50%;
-   transform: translate(-50%, -50%);
 }
 
- /* ---------------------------------------------RIGHT_RESUME----------------------------------------  */
+.resume .icon i {
+    position: absolute;
+    top: 50%;
+    Left: 50%;
+    transform: translate(-50%, -50%);
+}
 
- .resume .resume_right{
-    background:#ffffff ;
+
+/* ---------------------------------------------RIGHT_RESUME----------------------------------------  */
+
+.resume .resume_right {
+    background: #ffffff;
     width: 100%;
     padding: 20px 120px 20px 40px;
 }
 
-.resume .resume_right .resume_information{
+.resume .resume_right .resume_information {
     text-align: center;
 }
 
@@ -163,7 +174,7 @@ body{
     font-size: 40px;
 }
 
-.resume .resume_right p{
+.resume .resume_right p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -171,40 +182,46 @@ body{
     margin-inline-end: 0px;
 }
 
-.resume .resume_right .name_skill_right{
+.resume .resume_right .name_skill_right {
     margin-top: -60px;
     padding-right: 100px;
     margin-right: 40px;
     top: 45px;
     display: inline-block;
     position: relative;
-    background-color: #ffffff;    
+    background-color: #ffffff;
     padding-left: 30px;
     padding-right: 30px;
     left: 50%;
     transform: translateX(-50%);
 }
-.position_apply{
+
+.position_apply {
     margin-top: 30px;
-    color: #bbbcbd ;
+    color: #bbbcbd;
     font-size: 30px;
 }
 
+
 /* ------------------------------- Bar Skill ----------------------  */
-.skills{
+
+.skills {
     margin-top: 30px;
 }
-.bars{
+
+.bars {
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px 10px;
     padding: 0 10px;
 }
-.bars .bar p{
+
+.bars .bar p {
     font-size: 15px;
     font-weight: bold;
 }
+
 .bar span {
     display: block;
     width: 100%;
@@ -215,7 +232,7 @@ body{
     position: relative;
 }
 
-.bar span::before{
+.bar span::before {
     position: absolute;
     content: "";
     width: 80%;
@@ -227,13 +244,13 @@ body{
     border-radius: 10px;
 }
 
-.skills-content{
+.skills-content {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     border: #191919;
 }
-    
-.skills-content .skill-1 .p{
+
+.skills-content .skill-1 .p {
     display: inline-block;
     color: #De191910;
     text-align: left;
@@ -241,13 +258,13 @@ body{
     margin-top: 11px;
     font-size: 15px;
     margin-top: 10px;
-
 }
+
 .skills-content .skill-1 .space {
     margin-top: 4px;
 }
 
-.dot{
+.dot {
     margin-left: 20px;
     height: 18px;
     width: 18px;
@@ -256,38 +273,70 @@ body{
     display: inline-block;
 }
 
-.dot-2{
+.dot-2 {
     margin-left: 20px;
     height: 17px;
-    width:17px;
+    width: 17px;
     background-color: #faf9f9;
     border-radius: 50%;
     display: inline-block;
     border: 0.5px solid #8f8e8e;
-}    
+}
 
-    .circle{
-        margin-top: 10px;
-        display: flex;
+.circle {
+    margin-top: 10px;
+    display: flex;
+}
+
+
+/* ---------------------------------------------------- BUTTON ----------------------------------------------  */
+
+.btn {
+    display: inline-block;
+    padding: 7px;
+    width: 80px;
+}
+
+.btn-add {
+    color: #fff;
+    background-color: #0f9c66;
+    border-color: #0f9c66;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+
+/* Responsive  */
+
+@media only screen and (max-width: 1680px) {
+    .resume {
+        margin: 100px;
     }
+}
 
-    /* Responsive  */
-    @media only screen and (max-width: 1680px){
+@media only screen and (max-width: 1080px) {
+    .resume {
+        margin: 50px;
+    }
+    @media only screen and (max-width: 800px) {
         .resume {
-            margin: 100px ;
-       }
-    }
-        @media only screen and (max-width: 1080px){
-            .resume {
-                 margin: 50px ;
-            }
-            @media only screen and (max-width: 800px){
-                .resume {
-                    margin: 2% 2%;
-                }
-            }
+            margin: 2% 2%;
         }
-    
-
-
-    
+    }
+}
