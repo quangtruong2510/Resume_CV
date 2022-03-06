@@ -2,13 +2,10 @@
 include_once('service.php');
 
 if (isset($_POST['addNewItem'])) {
-
   echo "hello";
   $name_company = $_POST['name_company'];
   $since  = $_POST['since'];
   $position  = $_POST['position'];
-
-  // echo $name_company.$since.$position;
 
   if (empty($name_company) || empty($since) || empty($position)) {
   } else {
@@ -28,8 +25,6 @@ if (isset($_POST['updateItem'])) {
     header("Location: home.php");
   }
 }
-
-
 
 if (isset($_POST['delete'])) {
   $id = $_POST['id'];
