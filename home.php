@@ -13,7 +13,6 @@ $persons = getall();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Style.css">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 
 <body>
@@ -153,13 +152,11 @@ $persons = getall();
         <span class='bx bxs-calendar ' style="color: rgb(196, 194, 191); margin-top: 10px;"></span>
         <span class="content1"> 2018 - 2022 </span>
         <p class="content4"> Major: Software Engineering </p>
-
       </div>
       <div class="resume_item resume_experiences">
         <div class="title">
           <p class="name_skill_right  bold"> EXPERIENCES </p>
         </div>
-
         <form method="get" action="create.php">
           <input class="btn btn-add" type="submit" name="id" value="New">
         </form>
@@ -194,7 +191,6 @@ $persons = getall();
         <div class="title">
           <p class="name_skill_right bold"> PROJECTS </p>
         </div>
-
         <div class="name_title ">Software Engineering</div>
         <p class="content4">
           Member: 3
@@ -203,7 +199,6 @@ $persons = getall();
           Description: This is a second-hand shopping application that helps you find useful
           products and services in the nearest place where you live. Also, you can buy items
           and post your detailed product descriptions to sell them. </pre>
-
         <div class="name_title ">Programming Project</div>
         <p class="content4">
           Member: 4
@@ -216,5 +211,4 @@ $persons = getall();
     </div>
   </div>
 </body>
-
 </html>
